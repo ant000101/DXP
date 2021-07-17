@@ -1,0 +1,230 @@
+2021-02-15 07:16:14,415 DEBUG *******Starting function script_db_init.py : run
+2021-02-15 07:16:14,415 INFO Starting ...
+2021-02-15 07:16:14,415 DEBUG *******Starting function script_db_init.py : run_migrations
+2021-02-15 07:17:41,863 DEBUG *******Finished function script_db_init.py : run_migrations in 0:01:27.447834 seconds
+2021-02-15 07:17:41,863 DEBUG *******Starting function script_db_init.py : create_superuser
+2021-02-15 07:17:42,611 DEBUG *******Finished function script_db_init.py : create_superuser in 0:00:00.748084 seconds
+2021-02-15 07:17:42,612 INFO End !!!
+2021-02-15 07:17:42,612 DEBUG *******Finished function script_db_init.py : run in 0:01:28.196977 seconds
+2021-02-15 07:18:31,437 DEBUG *******Starting function script_fixtures_build.py : run
+2021-02-15 07:18:31,437 INFO Starting ...
+2021-02-15 07:18:31,437 DEBUG *******Starting function script_fixtures_build.py : build_fixtures
+2021-02-15 07:18:31,439 DEBUG *******Starting function script_fixtures_build.py : xlsx_to_json
+2021-02-15 07:18:31,439 DEBUG Appname: sysapps.common Failed
+2021-02-15 07:18:31,439 DEBUG *******Finished function script_fixtures_build.py : xlsx_to_json in 0:00:00.000254 seconds
+2021-02-15 07:18:31,440 DEBUG *******Starting function script_fixtures_build.py : xlsx_to_json
+2021-02-15 07:18:31,559 DEBUG sheet_name:*********************continent
+2021-02-15 07:18:31,559 DEBUG    id                   name           created_on           updated_on datamode
+0   1                 Africa  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+1   2                   Asia  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+2   3  Australia and Oceania  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+3   4                 Europe  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+4   5          North America  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+5   6          South America  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+2021-02-15 07:18:31,597 DEBUG Appname: sysapps.master_manager ModelName: continent Success
+2021-02-15 07:18:31,602 DEBUG sheet_name:*********************country
+2021-02-15 07:18:31,602 DEBUG       id          name iso_4217_alpha  iso_4217_numeric iso2 iso3 capital_city  telephone_calling_code internet_domain_code  continent_id           created_on           updated_on datamode
+0      1       ALGERIA            DZD                 8   DZ  DZA      Algiers                     213                  .dz             1  2000-01-01 00:00:00  2000-01-01 00:00:00        I
+1      2        ANGOLA            AOA               973   AO  AGO       Luanda                     244                  .ao             1  2000-01-01 00:00:00  2000-01-01 00:00:00        I
+2      3         BENIN            XOF               952   BJ  BEN   Porto-Novo                     229                  .bj             1  2000-01-01 00:00:00  2000-01-01 00:00:00        I
+3      4      BOTSWANA            BWP                72   BW  BWA     Gaborone                     267                  .bw             1  2000-01-01 00:00:00  2000-01-01 00:00:00        I
+4      5  BURKINA FASO            XOF               952   BF  BFA  Ouagadougou                     226                  .bf             1  2000-01-01 00:00:00  2000-01-01 00:00:00        I
+..   ...           ...            ...               ...  ...  ...          ...                     ...                  ...           ...                  ...                  ...      ...
+184  185          PERU            PEN               943   PE  PER         Lima                      51                  .pe             6  2000-01-01 00:00:00  2000-01-01 00:00:00        I
+185  186      SURINAME            SRD               968   SR  SUR   Paramaribo                     597                  .sr             6  2000-01-01 00:00:00  2000-01-01 00:00:00        I
+186  187       URUGUAY            UYI               940   UY  URY   Montevideo                     598                  .uy             6  2000-01-01 00:00:00  2000-01-01 00:00:00        I
+187  188     VENEZUELA            VEF               937   VE  VEN      Caracas                      58                  .ve             6  2000-01-01 00:00:00  2000-01-01 00:00:00        I
+188  189       ECUADOR            USD               840   EC  ECU        Quito                     593                  .ec             6  2000-01-01 00:00:00  2000-01-01 00:00:00        I
+
+[189 rows x 13 columns]
+2021-02-15 07:18:31,624 DEBUG Appname: sysapps.master_manager ModelName: country Success
+2021-02-15 07:18:31,626 DEBUG sheet_name:*********************cregion
+2021-02-15 07:18:31,626 DEBUG                         name  country_id           created_on           updated_on datamode
+0                     Africa           1  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+1                     Africa           2  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+2                     Africa           3  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+3                     Africa           4  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+4                     Africa           5  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+..                       ...         ...                  ...                  ...      ...
+184  Europe and Central Asia         150  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+185  Europe and Central Asia         151  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+186  Europe and Central Asia         152  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+187  Europe and Central Asia         153  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+188  Europe and Central Asia         154  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+
+[189 rows x 5 columns]
+2021-02-15 07:18:31,637 DEBUG Appname: sysapps.master_manager ModelName: cregion Success
+2021-02-15 07:18:31,639 DEBUG sheet_name:*********************state
+2021-02-15 07:18:31,639 DEBUG                  name  country_id           created_on           updated_on datamode
+0      ANDHRA PRADESH          65  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+1   ARUNACHAL PRADESH          65  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+2               ASSAM          65  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+3               BIHAR          65  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+4        CHHATTISGARH          65  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+..                ...         ...                  ...                  ...      ...
+74           VIRGINIA         176  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+75         WASHINGTON         176  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+76      WEST VIRGINIA         176  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+77          WISCONSIN         176  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+78            WYOMING         176  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+
+[79 rows x 5 columns]
+2021-02-15 07:18:31,650 DEBUG Appname: sysapps.master_manager ModelName: state Success
+2021-02-15 07:18:31,653 DEBUG sheet_name:*********************city
+2021-02-15 07:18:31,653 DEBUG         name  country_id  state_id           created_on           updated_on datamode
+0    CHENNAI          65        24  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+1  BANGALORE          65        12  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+2  HYDERABAD          65         1  2017-11-13 11:15:01  2017-11-13 11:15:01        A
+2021-02-15 07:18:31,661 DEBUG Appname: sysapps.master_manager ModelName: city Success
+2021-02-15 07:18:31,664 DEBUG sheet_name:*********************postalcode
+2021-02-15 07:18:31,664 DEBUG Empty DataFrame
+Columns: [postalcode, country_id, created_on, updated_on, datamode]
+Index: []
+2021-02-15 07:18:31,666 DEBUG Appname: sysapps.master_manager ModelName: postalcode Success
+2021-02-15 07:18:31,669 DEBUG sheet_name:*********************currency
+2021-02-15 07:18:31,669 DEBUG                               name iso_4217_alpha  iso_4217_numeric symbol major_unit_name minor_unit_name  display_format           created_on           updated_on datamode
+0                       UAE dirham            AED               784    د.إ          Dirham            Fils             NaN  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+1                   Afghan afghani            AFN               971      ؋         Afghani             Pul             NaN  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+2                     Albanian lek            ALL                 8      L             Lek        Qindarke             NaN  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+3                    Armenian dram            AMD                51    NaN            Dram            Luma             NaN  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+4    Netherlands Antillean guilder            ANG               532      ƒ         Guilder            Cent             NaN  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+..                             ...            ...               ...    ...             ...             ...             ...                  ...                  ...      ...
+154                      CFP franc            XPF               953      ﷼           Franc         Centime             NaN  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+155                    Yemeni Rial            YER               886      R            Rial            Fils             NaN  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+156             South African rand            ZAR               710     ZK            Rand            Cent             NaN  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+157                 Zambian kwacha            ZMW               967    NaN          Kwacha           Ngwee             NaN  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+158                Zimbabwe Dollar            ZWL               932      R          Dollar            Cent             NaN  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+
+[159 rows x 10 columns]
+2021-02-15 07:18:31,687 DEBUG Appname: sysapps.master_manager ModelName: currency Success
+2021-02-15 07:18:31,689 DEBUG sheet_name:*********************timeformat
+2021-02-15 07:18:31,689 DEBUG              name display_format display_pattern          created_on          updated_on datamode
+0  HH:MM:SS.f(24)    %H:%M:%S.%f      HH:MM:SS.f  2017-01-01 0:00:00  2017-01-01 0:00:00        D
+1    HH:MM:SS(24)       %H:%M:%S        HH:MM:SS  2017-01-01 0:00:00  2017-01-01 0:00:00        A
+2       HH:MM(24)          %H:%M           HH:MM  2017-01-01 0:00:00  2017-01-01 0:00:00        A
+3  hh:MM:SS.f(12)    %I:%M:%S.%f      hh:MM:SS.f  2017-01-01 0:00:00  2017-01-01 0:00:00        D
+4    hh:MM:SS(12)       %I:%M:%S        hh:MM:SS  2017-01-01 0:00:00  2017-01-01 0:00:00        A
+5       hh:MM(12)          %I:%M           hh:MM  2017-01-01 0:00:00  2017-01-01 0:00:00        A
+2021-02-15 07:18:31,697 DEBUG Appname: sysapps.master_manager ModelName: timeformat Success
+2021-02-15 07:18:31,700 DEBUG sheet_name:*********************dateformat
+2021-02-15 07:18:31,700 DEBUG            name display_format display_pattern          created_on          updated_on datamode
+0    2020-12-31       %Y-%m-%d      YYYY-MM-DD  2017-01-01 0:00:00  2017-01-01 0:00:00        A
+1    12/31/2020       %m/%d/%Y      MM/DD/YYYY  2017-01-01 0:00:00  2017-01-01 0:00:00        A
+2    31/12/2020       %d/%m/%Y      DD/MM/YYYY  2017-01-01 0:00:00  2017-01-01 0:00:00        A
+3     12/31/ 20       %m/%d/%y        MM/DD/YY  2017-01-01 0:00:00  2017-01-01 0:00:00        A
+4     31/12/ 20       %d/%m/%y        DD/MM/YY  2017-01-01 0:00:00  2017-01-01 0:00:00        A
+5  Dec 31, 2020      %b %d, %Y     MM DD, YYYY  2017-01-01 0:00:00  2017-01-01 0:00:00        A
+2021-02-15 07:18:31,708 DEBUG Appname: sysapps.master_manager ModelName: dateformat Success
+2021-02-15 07:18:31,711 DEBUG sheet_name:*********************nameformat
+2021-02-15 07:18:31,711 DEBUG                                name display_format          created_on          updated_on datamode
+0                          Fullname       FN MN LN  2017-01-01 0:00:00  2017-01-01 0:00:00        A
+1                FirstName LastName          FN LN  2017-01-01 0:00:00  2017-01-01 0:00:00        A
+2  FirstName MiddleInitial LastName       FN.MI.LN  2017-01-01 0:00:00  2017-01-01 0:00:00        A
+3                      FirstName.LI          FN.LI  2017-01-01 0:00:00  2017-01-01 0:00:00        A
+4             FirstInitial.LastName          FI.LN  2017-01-01 0:00:00  2017-01-01 0:00:00        A
+5                         FirstName             FN  2017-01-01 0:00:00  2017-01-01 0:00:00        A
+2021-02-15 07:18:31,718 DEBUG Appname: sysapps.master_manager ModelName: nameformat Success
+2021-02-15 07:18:31,721 DEBUG sheet_name:*********************masterdataregistry
+2021-02-15 07:18:31,721 DEBUG           app_name app_display_name          model_name    model_display_name                                 displayable_fields  ... is_mc_required is_ui_required          created_on          updated_on datamode
+0   master_manager  Masters Manager          timeformat           Time Format                                                NaN  ...              1              1  2017-01-01 0:00:00  2017-01-01 0:00:00        A
+1   master_manager  Masters Manager             country               Country  id,name,iso_4217_alpha,iso_4217_numeric,iso2,i...  ...              1              1  2017-01-01 0:00:00  2017-01-01 0:00:00        A
+2   master_manager  Masters Manager               state                 State  id,name,country_name,created_on,updated_on,dat...  ...              1              1  2017-01-01 0:00:00  2017-01-01 0:00:00        A
+3   master_manager  Masters Manager             cregion                Region  id,name,country_name,created_on,updated_on,dat...  ...              1              1  2017-01-01 0:00:00  2017-01-01 0:00:00        A
+4   master_manager  Masters Manager          nameformat           Name Format                                                NaN  ...              1              1  2017-01-01 0:00:00  2017-01-01 0:00:00        A
+5   master_manager  Masters Manager  masterdataregistry  Master Data Registry                                                NaN  ...              0              0  2017-01-01 0:00:00  2017-01-01 0:00:00        A
+6   master_manager  Masters Manager          dateformat           Date Format                                                NaN  ...              1              1  2017-01-01 0:00:00  2017-01-01 0:00:00        A
+7   master_manager  Masters Manager            currency              Currency                                                NaN  ...              1              1  2017-01-01 0:00:00  2017-01-01 0:00:00        A
+8   master_manager  Masters Manager           continent             Continent                                                NaN  ...              1              1  2017-01-01 0:00:00  2017-01-01 0:00:00        A
+9   master_manager  Masters Manager          postalcode           Postal Code  id,name,country_name,created_on,updated_on,dat...  ...              1              1  2017-01-01 0:00:00  2017-01-01 0:00:00        A
+10  master_manager  Masters Manager                city                  City  id,name,state_name,country_name,created_on,upd...  ...              1              1  2017-01-01 0:00:00  2017-01-01 0:00:00        A
+11  master_manager  Masters Manager            kvmaster              KVMaster                                                NaN  ...              1              1  2017-01-01 0:00:00  2017-01-01 0:00:00        A
+
+[12 rows x 12 columns]
+2021-02-15 07:18:31,735 DEBUG Appname: sysapps.master_manager ModelName: masterdataregistry Success
+2021-02-15 07:18:31,739 DEBUG sheet_name:*********************kvmaster
+2021-02-15 07:18:31,739 DEBUG       key_category key_code                           key_name                          key_value  key_desc data_loaded_by           created_on           updated_on datamode
+0      name_prefix      np1                                 Mr                                 MR       NaN         SYSTEM  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+1      name_prefix      np2                                Mrs                                MRS       NaN         SYSTEM  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+2      name_prefix      np3                                 Dr                                 DR       NaN         SYSTEM  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+3      name_suffix      np4                                 Jr                                 JR       NaN         SYSTEM  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+4      name_suffix      np5                                 Sr                                 SR       NaN         SYSTEM  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+5           gender       g1                             Female                                  F       NaN         SYSTEM  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+6           gender       g2                               Male                                  M       NaN         SYSTEM  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+7           gender       g3                        TransGender                                 TG       NaN         SYSTEM  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+8           gender       g4                            Unknown                                  U       NaN         SYSTEM  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+9         religion       r1  African traditional and Diasporic  African traditional and Diasporic       NaN         SYSTEM  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+10        religion       r2                              Bahai                              Bahai       NaN         SYSTEM  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+11        religion       r3                           Buddhism                           Buddhism       NaN         SYSTEM  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+12        religion       r4                            Cao Dai                            Cao Dai       NaN         SYSTEM  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+13        religion       r5                            Chinese                            Chinese       NaN         SYSTEM  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+14        religion       r6                       Christianity                       Christianity       NaN         SYSTEM  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+15        religion       r7                           Hinduism                           Hinduism       NaN         SYSTEM  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+16        religion       r8                              Islam                              Islam       NaN         SYSTEM  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+17        religion       r9                            Jainism                            Jainism       NaN         SYSTEM  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+18        religion      r10                              Juche                              Juche       NaN         SYSTEM  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+19        religion      r11                            Judaism                            Judaism       NaN         SYSTEM  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+20        religion      r12                       Neo-Paganism                       Neo-Paganism       NaN         SYSTEM  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+21        religion      r13                       Nonreligious                       Nonreligious       NaN         SYSTEM  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+22        religion      r14                  Primal-indigenous                  Primal-indigenous       NaN         SYSTEM  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+23        religion      r15                             Shinto                             Shinto       NaN         SYSTEM  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+24        religion      r16                            Sikhism                            Sikhism       NaN         SYSTEM  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+25        religion      r17                          Spiritism                          Spiritism       NaN         SYSTEM  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+26        religion      r18                           Tenrikyo                           Tenrikyo       NaN         SYSTEM  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+27        religion      r19             Unitarian-Universalism             Unitarian-Universalism       NaN         SYSTEM  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+28        religion      r20                     Zoroastrianism                     Zoroastrianism       NaN         SYSTEM  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+29         ethnics     eth1    American Indian / Alaska Native    American Indian / Alaska Native       NaN         SYSTEM  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+30         ethnics     eth2           Asian / Pacific Islander           Asian / Pacific Islander       NaN         SYSTEM  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+31         ethnics     eth3           African American / Black           African American / Black       NaN         SYSTEM  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+32         ethnics     eth4                           Hispanic                           Hispanic       NaN         SYSTEM  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+33         ethnics     eth5                              White                              White       NaN         SYSTEM  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+34         ethnics     eth6                        Unspecified                        Unspecified       NaN         SYSTEM  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+35  martial_status      ms1                            Married                            MARRIED       NaN         SYSTEM  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+36  martial_status      ms2                            Widowed                            WIDOWED       NaN         SYSTEM  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+37  martial_status      ms3                          Separated                          SEPARATED       NaN         SYSTEM  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+38  martial_status      ms4                           Divorced                           DIVORCED       NaN         SYSTEM  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+39  martial_status      ms5                             Single                             SINGLE       NaN         SYSTEM  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+40  veteran_status      vs1                            Veteran                            VETERAN       NaN         SYSTEM  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+41  veteran_status      vs2                   Disabled Veteran                   DISABLED VETERAN       NaN         SYSTEM  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+42  veteran_status      vs3                               None                               NONE       NaN         SYSTEM  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+43    contactlevel      cl1                            Primary                            PRIMARY       NaN         SYSTEM  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+44    contactlevel      cl2                          Secondary                          SECONDARY       NaN         SYSTEM  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+45             lob     lob1                            General                            GENERAL       NaN         SYSTEM  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+46           theme   theme1                            Default                            DEFAULT       NaN         SYSTEM  2000-01-01 00:00:00  2000-01-01 00:00:00        A
+2021-02-15 07:18:31,757 DEBUG Appname: sysapps.master_manager ModelName: kvmaster Success
+2021-02-15 07:18:31,757 DEBUG *******Finished function script_fixtures_build.py : xlsx_to_json in 0:00:00.316667 seconds
+2021-02-15 07:18:31,759 DEBUG *******Starting function script_fixtures_build.py : xlsx_to_json
+2021-02-15 07:18:31,759 DEBUG Appname: sysapps.account_manager Failed
+2021-02-15 07:18:31,760 DEBUG *******Finished function script_fixtures_build.py : xlsx_to_json in 0:00:00.000399 seconds
+2021-02-15 07:18:31,760 DEBUG *******Finished function script_fixtures_build.py : build_fixtures in 0:00:00.322833 seconds
+2021-02-15 07:18:31,760 INFO End !!!
+2021-02-15 07:18:31,760 DEBUG *******Finished function script_fixtures_build.py : run in 0:00:00.323187 seconds
+2021-02-15 07:21:02,461 DEBUG *******Starting function script_fixtures_run.py : run
+2021-02-15 07:21:02,461 INFO Starting ...
+2021-02-15 07:21:02,461 DEBUG *******Starting function script_fixtures_run.py : run_fixtures
+2021-02-15 07:21:02,461 DEBUG *******Starting function script_fixtures_run.py : _load_fixture
+2021-02-15 07:21:02,929 DEBUG *******Finished function script_fixtures_run.py : _load_fixture in 0:00:00.467764 seconds
+2021-02-15 07:21:02,929 DEBUG *******Starting function script_fixtures_run.py : _load_fixture
+2021-02-15 07:21:04,228 DEBUG *******Finished function script_fixtures_run.py : _load_fixture in 0:00:01.298472 seconds
+2021-02-15 07:21:04,228 DEBUG *******Starting function script_fixtures_run.py : _load_fixture
+2021-02-15 07:21:05,049 DEBUG *******Finished function script_fixtures_run.py : _load_fixture in 0:00:00.821197 seconds
+2021-02-15 07:21:05,049 DEBUG *******Starting function script_fixtures_run.py : _load_fixture
+2021-02-15 07:21:05,582 DEBUG *******Finished function script_fixtures_run.py : _load_fixture in 0:00:00.532744 seconds
+2021-02-15 07:21:05,582 DEBUG *******Starting function script_fixtures_run.py : _load_fixture
+2021-02-15 07:21:06,039 DEBUG *******Finished function script_fixtures_run.py : _load_fixture in 0:00:00.456487 seconds
+2021-02-15 07:21:06,039 DEBUG *******Starting function script_fixtures_run.py : _load_fixture
+2021-02-15 07:21:06,089 DEBUG *******Finished function script_fixtures_run.py : _load_fixture in 0:00:00.049453 seconds
+2021-02-15 07:21:06,089 DEBUG *******Starting function script_fixtures_run.py : _load_fixture
+2021-02-15 07:21:06,750 DEBUG *******Finished function script_fixtures_run.py : _load_fixture in 0:00:00.661272 seconds
+2021-02-15 07:21:06,751 DEBUG *******Starting function script_fixtures_run.py : _load_fixture
+2021-02-15 07:21:07,239 DEBUG *******Finished function script_fixtures_run.py : _load_fixture in 0:00:00.487615 seconds
+2021-02-15 07:21:07,239 DEBUG *******Starting function script_fixtures_run.py : _load_fixture
+2021-02-15 07:21:07,727 DEBUG *******Finished function script_fixtures_run.py : _load_fixture in 0:00:00.488583 seconds
+2021-02-15 07:21:07,728 DEBUG *******Starting function script_fixtures_run.py : _load_fixture
+2021-02-15 07:21:08,049 DEBUG *******Finished function script_fixtures_run.py : _load_fixture in 0:00:00.321413 seconds
+2021-02-15 07:21:08,049 DEBUG *******Starting function script_fixtures_run.py : _load_fixture
+2021-02-15 07:21:08,627 DEBUG *******Finished function script_fixtures_run.py : _load_fixture in 0:00:00.577491 seconds
+2021-02-15 07:21:08,627 DEBUG *******Starting function script_fixtures_run.py : _load_fixture
+2021-02-15 07:21:09,083 DEBUG *******Finished function script_fixtures_run.py : _load_fixture in 0:00:00.456339 seconds
+2021-02-15 07:21:09,083 DEBUG *******Finished function script_fixtures_run.py : run_fixtures in 0:00:06.622261 seconds
+2021-02-15 07:21:09,084 INFO End !!!
+2021-02-15 07:21:09,084 DEBUG *******Finished function script_fixtures_run.py : run in 0:00:06.622664 seconds

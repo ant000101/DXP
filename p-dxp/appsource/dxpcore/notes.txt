@@ -1,0 +1,114 @@
+Discussion with Anand
+*********************
+
+BAV update
+**********
+* BAV's CEP project is going as per plan. 
+* We will MVP 1.0 in Mar 21. MVP 2.0 in June 21.
+
+Madura Story
+*************
+* Been working with Madura from 2011 onwards. 
+* Built the entire - customer engagement, loan origination, loan collections, customer auditing, field and feet-on-street automation.   
+* Integrated with Credit Bureau, AEPS (Aadhaar Enabled Payment System), Micro-ATM services
+
+To Ask
+*******
+* Like to continue the 10 year relationship - extend to credit access
+* Looking for new opportunities due to merger 
+* SEAANT can do digital transformations and merger consolidations
+
+To Drop 
+***********
+* Heard that, SoftwareGroup is struggling in implementation. 
+
+
+Core Sysapps
+*************
+file_utility
+image_utility
+message_gateway
+master_manager
+account_manager
+launch_pad
+serviceplan_manager
+
+Core Bizapps
+*************
+customer_management
+ticket_management
+lead_management
+product_management
+org_management
+customer_engagement_manager
+
+File_utility
+    FileRepository
+    FileRepositorySettings
+Image_utility
+    ImageRepository
+    ImageRepositorySettings
+Audio_utility
+    ??
+Video_utility
+    ??
+Email_gateway
+    EmailTemplate
+    EmailAuditLogs
+Master_manger
+    MasterDataRepository
+    All Master Models
+Auth_Manager
+    User
+    UserOTP
+    UserKYCProfile
+    UserKYCSocialAccounts
+    UserKYCSocialProfile
+    UserKYCEducation
+    UserKYCWorkExperience
+    UserKYCKV
+
+LaunchPad
+    AppRegistry
+    AppSettings
+    AppAction
+    AppNavigation
+    AppRole
+    AppRoleRights
+
+Account_Manager
+    AccountTypeMaster
+    AccountSettingsMaster
+    Account 
+    AccountSettings
+    AccountWallet (?)
+    AccountCustomer (?)
+    Customer
+    CustomerContacts
+    CustomerAddress
+    CustomerPaymentMethods (?)
+    AccountUser
+    AccountUserSettings
+    AccountServicePlan (?)
+    AccountServicePlanUsage (?)
+    AccountServicePlanUsageDetail (?)
+    AccountServicePlanCampaign (?)
+    AccountOrder
+    AccountOrderItems
+    AccountPaymentTransactions
+    AccountInvoice
+    AccountInvoiceItems
+
+ServicePlan_Manager
+    Platform
+    PlatformModule
+    PlatformModuleFeature
+    PlatformModuleFeaturePrice
+    ServicePlan
+    ServicePlanDetail
+    ServicePlanModule
+    ServicePlanFeature
+    ServicePlanPrice
+    ServicePlanCampaign
+    Tax
+    ServicePlanTax
