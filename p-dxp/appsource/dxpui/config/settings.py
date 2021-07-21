@@ -186,16 +186,16 @@ DEFAULT_CHARSET = 'utf-8'
 DATABASES = {
 
     'default': {
-            
+
             'ENGINE': env('DB_ENGINE'),
             'NAME': env('DB_NAME'),
             'USER': env('DB_USER'),
             'PASSWORD': env('DB_PASSWORD'),
             'HOST': env('DB_HOST'),
             'PORT': env('DB_PORT'),
-            'OPTIONS': {                
+            'OPTIONS': {
             },
-        }    
+        }
 }
 SECRET_KEY = env('SECRET_KEY')
 
@@ -238,7 +238,6 @@ EMAIL_SUBJECT_PREFIX = env('EMAIL_SUBJECT_PREFIX')
 # Email address that error messages come from.
 SERVER_EMAIL = DEFAULT_FROM_EMAIL
 
-
 # List of strings representing installed apps.
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -249,13 +248,14 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     #'django_extensions',
     'sysapps.common',
+    'sysapps.ui_utils',
     #'sysapps.master_manager',
     #'sysapps.account_manager',
     #'SAF.sysapps.polls',
 ]
 
 SGI_APPLICATION = env('SGI_APPLICATION')
-if SGI_APPLICATION == "wsgi":    
+if SGI_APPLICATION == "wsgi":
     WSGI_APPLICATION = 'config.wsgi.application'
 else:
     ASGI_APPLICATION = 'config.asgi.application'
@@ -266,7 +266,8 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            os.path.join(BASE_DIR, 'polls/templates/'),
+            os.path.join(BASE_DIR, 'sysapps/ui_utils/templates/'),
+            os.path.join(BASE_DIR, 'sysapps/ui_utils/templates/pages'),
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -672,14 +673,14 @@ LOGGING = {
             'interval': 1,
             'backupCount': 7
         },
-        
-        
+
+
     },
     'loggers': {
         'app_scripts':{'handlers':['app_scripts'],'level': env('APP_LOGGING_LEVEL'),'propagate': False,},
         'app':{'handlers':['app'],'level': env('APP_LOGGING_LEVEL'),'propagate': False,},
         'app_threads':{'handlers':['app_threads'],'level': env('APP_LOGGING_LEVEL'),'propagate': False,},
-        
+
     }
 }
 logging.config.dictConfig(LOGGING)
